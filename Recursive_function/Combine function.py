@@ -5,3 +5,6 @@ def combination(n, k):
     
     else:
         return combination(n - 1, k - 1) + combination(n - 1, k)
+        
+
+print(combination(4,3))
