@@ -17,17 +17,8 @@ int main()
             cin >> sparse_matrix[i][k];
         }
     }
-    for (int i = 0; i < n; i++)
-    {
-        for (int k = 0; k < n; k++)
-        {
-            if (sparse_matrix[i][k] != 0)
-            {
-                size++;
-            }
-        }
-    }
-    int compact_matrix[size][3];
+
+    int compact_matrix[n][3];
     int m = 0;
     for (int i = 0; i < n; i++)
     {
@@ -44,8 +35,8 @@ int main()
     }
     
     cout << endl << "     " << "  row " << "    col " << "   value " <<endl;
-    cout << "a[0]    " << n << "       " << n << "       " << size << endl;
-    for (int i = 0; i < size; i++)
+    cout << "a[0]    " << n << "       " << n << "       " << m << endl;
+    for (int i = 0; i < m; i++)
     {
     	cout << " [" << i+1 << "]" << "\t";
         cout << compact_matrix[i][0] << "\t";
