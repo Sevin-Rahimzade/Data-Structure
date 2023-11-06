@@ -58,7 +58,5 @@ public:
 
 int main()
 {
-	Array array;
-	array.display();
     return 0;
 }
