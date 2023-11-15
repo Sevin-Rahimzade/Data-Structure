@@ -44,8 +44,16 @@ class QueueReplica:
             return False
 
     def reverse(self):
-        return self.queue[::-1]
+       start = 0
+        temp = self.size
+        end = temp - 1
 
+        while start < end:
+            self.queue[start], self.queue[end], = self.queue[end], self.queue[start]
+            start += 1
+            end -= 1
+
+        return self.queue
 
 
 # test
