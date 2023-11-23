@@ -7,19 +7,16 @@ class stack:
             self.stack.append(None)
             self.size = size
 
+    def push(self, item):
+        self.items.append(item)
 
-
-
-
-
-
-
-
-
-
-
-
-
+    def pop(self):
+        if not self.is_empty():
+            element = self.items[-1]
+            del self.items[-1]
+            return element
+        else:
+            raise Exception("Stack is empty")
             
     def peek(self):
         return self.stack[self.top]
