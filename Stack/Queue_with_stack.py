@@ -3,9 +3,9 @@ class Queue:
         self.enqueue_stack = []
         self.dequeue_stack = []
 
-
-
-
+    def enqueue(self, item):
+        self.enqueue_stack.append(item)
+        
     def dequeue(self):
         if not self.dequeue_stack:
             while self.enqueue_stack:
