@@ -27,14 +27,3 @@ class Array:
                 return i
 
         return -1
-
-#Test:
-
-arr = Array(5)
-
-arr.Insert("A", 2)
-
-arr.Delete(1)
-
-result = arr.find("B")
-print(result)
