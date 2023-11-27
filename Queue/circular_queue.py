@@ -50,18 +50,4 @@ class CircularQueue:
             start += 1
             end -= 1
             
-#Test:
 
-ob = CircularQueue(5)
-ob.enQueue(1)
-ob.enQueue(2)
-ob.enQueue(3)
-ob.enQueue(4)
-ob.enQueue(9)
-print(ob.queue)
-ob.deQueue()
-ob.deQueue()
-print(ob.queue)
-ob.enQueue(85)
-print(ob.queue)
-print(ob.deQueue())
