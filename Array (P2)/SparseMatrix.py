@@ -12,12 +12,4 @@ def sparseMatrix(sparce, n):
     return arr
 
 
-# Test:
-compactMatrix = sparseMatrix([
-    [0, 0, 1],
-    [0, 0, 2],
-    [1, 0, 5],
-], 3)
 
-for i in range(len(compactMatrix)):
-    print(compactMatrix[i])
