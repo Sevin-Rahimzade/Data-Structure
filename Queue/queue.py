@@ -56,14 +56,3 @@ class QueueReplica:
         return self.queue
 
 
-# test
-obj = QueueReplica(5)
-obj.enqueue(2)
-obj.enqueue(4)
-obj.enqueue(3)
-print(obj.queue)
-
-obj.dequeue()
-print(obj.queue)
-
-print(obj.peek())
