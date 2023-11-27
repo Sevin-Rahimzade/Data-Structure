@@ -20,11 +20,3 @@ class Queue:
             raise IndexError("Queue is empty")
 
 
-# Test :
-q = Queue()
-q.enqueue(1)
-q.enqueue(2)
-q.enqueue(3)
-print(q.dequeue())  # Output : 1
-print(q.dequeue())  # Output : 2
-print(q.dequeue())  # Output : 3
