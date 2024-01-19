@@ -87,17 +87,20 @@ class LinkedList(object):
                 return False
 
     def RemoveNodeAtEnd(self):
-
-        if self.head == None:
-            return
-
-        current_node = self.head
-        while (current_node.next.next):
-            current_node_value = current_node
-            current_node = current_node.next
+        if self.head is None:
+            return None
+        if self.head.next is None:
+            current_node_value = self.head
+            self.head = None
             return current_node_value
 
+        current_node = self.head
+        while current_node.next.next:
+            current_node = current_node.next
+
+        current_node_value = current_node.next
         current_node.next = None
+        return current_node_value
 
     def RemoveNodeAtBegin(self):
         if self.head is None:
@@ -152,8 +155,4 @@ class LinkedList(object):
         while (current):
             print(current.data)
             current = current.next
-
-
-
-
 
