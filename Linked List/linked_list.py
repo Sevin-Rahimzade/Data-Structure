@@ -77,7 +77,7 @@ class LinkedList(object):
                 position = position+1
                 current_node = current_node.next
             
-            if position == index :
+            if position+1 == index:
                 current_node_value = current_node.next             
                 current_node.next = current_node.next.next
                 
@@ -146,4 +146,14 @@ class LinkedList(object):
             current_node = current_node.next
             position = position + 1
         return position
+
+    def display(self):
+        current = self.head
+        while (current):
+            print(current.data)
+            current = current.next
+
+
+
+
 
